@@ -86,15 +86,11 @@
 		"formatHeader":	"<font color='#FFFFFF'>Hits : <b>{{n}}</b>  Total damage : <b>{{dmg-total}}</b>  Last hit : <font color='{{c:dmg-kind}}'><b>{{dmg}}</b> {{dead}}</font><br /><textformat leading='-4' tabstops='[30,80,130,265]'>Hits<tab>| Total<tab>| Last<tab>| Tank<tab>| Player</textformat></font>",
 		"formatHistory": "<textformat leading='-4' tabstops='[30,80,130,265]'>{{n-player}}<tab>| {{dmg-player}}<tab>| {{dmg}}<tab>| <font color='{{c:wn8}}'>{{vehicle}}</font> ({{rlevel}}) {{dead}}<tab>| {{nick}}</textformat>",
 		"shadow": {"color": "0x000000", "alpha": 100, "angle": 45, "distance": 0, "size": 5, "strength": 150},
-		"hpLeft": {
-			"enabled": false
-		}
+		"hpLeft": {"enabled": false}
 	},
 	
 	"hotkeys":{
-		"minimapZoom":{
-			"enabled": false
-		}
+		"minimapZoom":{"enabled": false}
 	},
 
 	"minimap":{
