@@ -1,4 +1,4 @@
-// XVM Minimalist Configuration
+// XVM Minimalist Configuration	
 // http://github.com/itsnbyim/XVM-Minimalist-Configuration
 // http://nbyim.com/wot-xvm-minimalist-configuration
 
