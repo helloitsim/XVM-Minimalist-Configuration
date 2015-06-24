@@ -6,6 +6,8 @@ Assuming that you already have downloaded and installed [XVM mod](http://www.mod
 - hitlog
 - enhanced minimap
 - last position marker
+
 ...
+
 ## Screenshots
 For more, check out my [blog post](http://nbyim.com/wot-xvm-minimalist-configuration/)!
