@@ -13,16 +13,16 @@
 
 	"battleLoading":{
 		"clanIcon": {"show": false},
-		"formatLeftNick": "<img src='xvm://res/icons/lang/{{region|EU}}/{{language|default}}.png' width='16' height='13'> {{name%.13s~..}} <font alpha='#A0A0A0'>{{clan}}</font>",
-		"formatRightNick": "<font alpha='#A0A0A0'>{{clan}}</font> {{name%.13s~..}} <img src='xvm://res/icons/lang/{{region|EU}}/{{language|default}}.png' width='16' height='13'>",
+		"formatLeftNick": "{{name%.13s~..}} <font alpha='#A0A0A0'>{{clan}}</font>",
+		"formatRightNick": "<font alpha='#A0A0A0'>{{clan}}</font> {{name%.13s~..}}",
 		"formatLeftVehicle": "{{vehicle}}<font face='Arial' size='12'> <font color='{{c:kb}}'>{{kb%2d~k}}</font> <font color='{{c:rating}}'>{{rating%2d~%}}</font> <font color='{{c:wn8}}'>{{wn8}}</font></font>",
 		"formatRightVehicle": "<font face='Arial' size='12'><font color='{{c:wn8}}'>{{wn8}}</font> <font color='{{c:rating}}'>{{rating%2d~%}}</font> <font color='{{c:kb}}'>{{kb%2d~k}}</font> </font>{{vehicle}}"
 	},
 	
 	"statisticForm":{
 		"clanIcon": {"show": false},
-		"formatLeftNick": "<img src='xvm://res/icons/lang/{{region|EU}}/{{language|default}}.png' width='16' height='13'> {{name%.13s~..}} <font alpha='#A0A0A0'>{{clan}}</font>",
-		"formatRightNick": "<font alpha='#A0A0A0'>{{clan}}</font> {{name%.13s~..}} <img src='xvm://res/icons/lang/{{region|EU}}/{{language|default}}.png' width='16' height='13'>",
+		"formatLeftNick": "{{name%.13s~..}} <font alpha='#A0A0A0'>{{clan}}</font>",
+		"formatRightNick": "<font alpha='#A0A0A0'>{{clan}}</font> {{name%.13s~..}}",
 		"formatLeftVehicle": "{{vehicle}}<font face='Arial' size='12'> <font color='{{c:kb}}'>{{kb%2d~k}}</font> <font color='{{c:rating}}'>{{rating%2d~%}}</font> <font color='{{c:wn8}}'>{{wn8}}</font></font>",
 		"formatRightVehicle": "<font face='Arial' size='12'><font color='{{c:wn8}}'>{{wn8}}</font> <font color='{{c:rating}}'>{{rating%2d~%}}</font> <font color='{{c:kb}}'>{{kb%2d~k}}</font> </font>{{vehicle}}"
 	},
@@ -177,8 +177,8 @@
 				{"enabled": true, "distance": "blindarea", "scale": 1, "thickness": 0.75, "alpha": 80, "color": "0x0184B5"},
 				{"enabled": false, "distance": 445}
 			],
-			"artillery": {"enabled": false, "color": "0xD95555"},
-			"shell": {"enabled": false, "color": "0xD95555"}
+			"artillery": {"enabled": true, "thickness": 0.75, "alpha": 50, "color": "0xD95555"},
+			"shell": {"enabled": true, "thickness": 0.75, "alpha": 50, "color": "0xD95555"}
 		},
 		"lines": {
 			"vehicle": {"enabled": true, "thickness": 0.65, "alpha": 50, "color": "0xD1D2D3", "from": 0, "to": 2000, "inmeters": true},
@@ -437,14 +437,6 @@
 					},
 					"textFields":[
 						{
-							"name": "Client Language",
-							"visible": true,
-							"x": 0,
-							"y": -90,
-							"alpha": 100,
-							"format": "<img src='xvm://res/icons/lang/{{region|EU}}/{{language|default}}.png'>"
-						},
-						{
 							"name": "Tank Battles",
 							"visible": true,
 							"x": -20,
@@ -453,7 +445,7 @@
 							"alpha": 100,
 							"font": {"align": "right", "bold": true, "italic": false, "name": "$FieldFont", "size": 15},
 							"shadow": {"alpha": 100, "angle": 90, "color": "0x000000", "distance": 0, "size": 10, "strength": 150},
-							"format": "<font color='{{c:t-battles|#FFFFFF0000}}'>{{t-battles|n/a}}</font>"
+							"format": "<font color='{{c:t-battles|#FF0000}}'>{{t-battles|n/a}}</font>"
 						},
 						{
 							"name": "Tank Winrate",
@@ -464,7 +456,7 @@
 							"alpha": 100,
 							"font": {"align": "center", "bold": true, "italic": false, "name": "$FieldFont", "size": 15},
 							"shadow": {"alpha": 100, "angle": 90, "color": "0x000000", "distance": 0, "size": 10, "strength": 150},
-							"format": "<font color='{{c:t-rating|#FFFFFF0000}}'>{{t-rating%d~%|n/a}}</font>"
+							"format": "<font color='{{c:t-rating|#FF0000}}'>{{t-winrate%d~%|n/a}}</font>"
 						},
 						{
 							"name": "Tank Average Damage",
@@ -486,7 +478,7 @@
 							"alpha": 100,
 							"font": {"align": "right", "bold": true, "italic": false, "name": "$FieldFont", "size": 15},
 							"shadow": {"alpha": 100, "angle": 90, "color": "0x000000", "distance": 0, "size": 10, "strength": 150},
-							"format": "<font color='{{c:kb}}'>{{kb}}</font>"
+							"format": "<font color='{{c:kb}}'>{{kb|n/a}}</font>"
 						},
 						{
 							"name": "Global Winrate",
@@ -497,7 +489,7 @@
 							"alpha": 100,
 							"font": {"align": "center", "bold": true, "italic": false, "name": "$FieldFont", "size": 15},
 							"shadow": {"alpha": 100, "angle": 90, "color": "0x000000", "distance": 0, "size": 10, "strength": 150},
-							"format": "<font color='{{c:rating}}'>{{rating}}</font>"
+							"format": "<font color='{{c:rating}}'>{{winrate%2d~%|n/a}}</font>"
 						},
 						{
 							"name": "Global WN8",
@@ -508,7 +500,7 @@
 							"alpha": 100,
 							"font": {"align": "left", "bold": true, "italic": false, "name": "$FieldFont", "size": 15},
 							"shadow": {"alpha": 100, "angle": 90, "color": "0x000000", "distance": 0, "size": 10, "strength": 150},
-							"format": "<font color='{{c:wn8}}'>{{wn8%d}}</font>"
+							"format": "<font color='{{c:wn8}}'>{{wn8%d|n/a}}</font>"
 						},
 						{
 							"name": "Player Name",
@@ -874,14 +866,6 @@
 					},
 					"textFields":[
 						{
-							"name": "Client Language",
-							"visible": true,
-							"x": 0,
-							"y": -90,
-							"alpha": 100,
-							"format": "<img src='xvm://res/icons/lang/{{region|EU}}/{{language|default}}.png'>"
-						},
-						{
 							"name": "Tank Battles",
 							"visible": true,
 							"x": -20,
@@ -890,7 +874,7 @@
 							"alpha": 100,
 							"font": {"align": "right", "bold": true, "italic": false, "name": "$FieldFont", "size": 15},
 							"shadow": {"alpha": 100, "angle": 90, "color": "0x000000", "distance": 0, "size": 10, "strength": 150},
-							"format": "<font color='{{c:t-battles|#FFFFFF0000}}'>{{t-battles|n/a}}</font>"
+							"format": "<font color='{{c:t-battles|#FF0000}}'>{{t-battles|n/a}}</font>"
 						},
 						{
 							"name": "Tank Winrate",
@@ -901,7 +885,7 @@
 							"alpha": 100,
 							"font": {"align": "center", "bold": true, "italic": false, "name": "$FieldFont", "size": 15},
 							"shadow": {"alpha": 100, "angle": 90, "color": "0x000000", "distance": 0, "size": 10, "strength": 150},
-							"format": "<font color='{{c:t-rating|#FFFFFF0000}}'>{{t-rating%d~%|n/a}}</font>"
+							"format": "<font color='{{c:t-rating|#FF0000}}'>{{t-winrate%d~%|n/a}}</font>"
 						},
 						{
 							"name": "Tank Average Damage",
@@ -923,7 +907,7 @@
 							"alpha": 100,
 							"font": {"align": "right", "bold": true, "italic": false, "name": "$FieldFont", "size": 15},
 							"shadow": {"alpha": 100, "angle": 90, "color": "0x000000", "distance": 0, "size": 10, "strength": 150},
-							"format": "<font color='{{c:kb}}'>{{kb}}</font>"
+							"format": "<font color='{{c:kb}}'>{{kb|n/a}}</font>"
 						},
 						{
 							"name": "Global Winrate",
@@ -934,7 +918,7 @@
 							"alpha": 100,
 							"font": {"align": "center", "bold": true, "italic": false, "name": "$FieldFont", "size": 15},
 							"shadow": {"alpha": 100, "angle": 90, "color": "0x000000", "distance": 0, "size": 10, "strength": 150},
-							"format": "<font color='{{c:rating}}'>{{rating}}</font>"
+							"format": "<font color='{{c:rating}}'>{{winrate%2d~%|n/a}}</font>"
 						},
 						{
 							"name": "Global WN8",
@@ -945,7 +929,7 @@
 							"alpha": 100,
 							"font": {"align": "left", "bold": true, "italic": false, "name": "$FieldFont", "size": 15},
 							"shadow": {"alpha": 100, "angle": 90, "color": "0x000000", "distance": 0, "size": 10, "strength": 150},
-							"format": "<font color='{{c:wn8}}'>{{wn8%d}}</font>"
+							"format": "<font color='{{c:wn8}}'>{{wn8%d|n/a}}</font>"
 						},
 						{
 							"name": "Player Name",
