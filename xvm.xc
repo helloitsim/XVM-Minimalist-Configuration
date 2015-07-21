@@ -218,7 +218,7 @@
 		},
 		"large": {
 			"enabled": true,
-			"width": 170,
+			"width": 160,
 			"removeSquadIcon": false,
 			"nickFormatLeft": "<font color='{{c:rating|#FFFFFF}}' alpha='{{alive?#FFFFFF|#808080}}'>{{rating%2d~%|  0%}}</font>  {{name%.13s~..}} <font alpha='#A0A0A0'>{{clan}}</font>",
 			"nickFormatRight": "<font alpha='#A0A0A0'>{{clan}}</font> {{name%.13s~..}}  <font color='{{c:rating|#FFFFFF}}' alpha='{{alive?#FFFFFF|#808080}}'>{{rating%2d~%|  0%}}</font>",
