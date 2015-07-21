@@ -188,26 +188,45 @@
 	},
 	
 	"playersPanel":{
-		"clanIcon": {"show": false},
-		"removePanelsModeSwitcher": true,
-		"short": {"enabled": false},
+	    "alpha": 60,
+	    "iconAlpha": 100,
+	    "removeSelectedBackground": false,
+	    "removePanelsModeSwitcher": true,
+	    "startMode": "large",
+	    "altMode": null,
+    	"none": {
+			"enabled": false
+		},
+		"short": {
+			"enabled": false
+		},
 		"medium": {
 			"enabled": true,
 			"width": 50,
+			"removeSquadIcon": false,
 			"formatLeft": "<font color='{{c:wn8|#FFFFFF}}'>&nbsp;{{vehicle}}</font>",
 			"formatRight": "<font color='{{c:wn8|#FFFFFF}}'>{{vehicle}}&nbsp;</font>",
+			"fragsFormatLeft": "{{frags}}",
+			"fragsFormatRight": "{{frags}}",
+			"extraFieldsLeft": [],
 			"extraFieldsRight": [
 				${"enemySpottedMarker"}
 			]
+	    },
+		"medium2": {
+			"enabled": false
 		},
-		"medium2": {"enabled": false},
 		"large": {
 			"enabled": true,
 			"width": 170,
+			"removeSquadIcon": false,
 			"nickFormatLeft": "<font color='{{c:rating|#FFFFFF}}' alpha='{{alive?#FFFFFF|#808080}}'>{{rating%2d~%|  0%}}</font>  {{name%.13s~..}} <font alpha='#A0A0A0'>{{clan}}</font>",
 			"nickFormatRight": "<font alpha='#A0A0A0'>{{clan}}</font> {{name%.13s~..}}  <font color='{{c:rating|#FFFFFF}}' alpha='{{alive?#FFFFFF|#808080}}'>{{rating%2d~%|  0%}}</font>",
 			"vehicleFormatLeft": "<font color='{{c:wn8|#FFFFFF}}' alpha='{{alive?#FFFFFF|#808080}}'>{{vehicle}}</font>",
 			"vehicleFormatRight": "<font color='{{c:wn8|#FFFFFF}}' alpha='{{alive?#FFFFFF|#808080}}'>{{vehicle}}</font>",
+			"fragsFormatLeft": "{{frags}}",
+			"fragsFormatRight": "{{frags}}",
+			"extraFieldsLeft": [],
 			"extraFieldsRight": [
 				${"enemySpottedMarker"}
 			]
@@ -218,6 +237,7 @@
 		"alpha": 100,
 		"x": -85,
 		"y": 8,
+		"align": "center",
 		"bindToIcon": true,
 		"format": "{{spotted}}",
 		"shadow": {}
