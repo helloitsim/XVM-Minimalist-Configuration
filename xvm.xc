@@ -176,7 +176,7 @@
 				{"enabled": true,  "distance": 50,          "scale": 1, "thickness": 0.75, "alpha": 50, "color": "0x0184B5"}, // 50m autodetection range
 				{"enabled": true,  "distance": "blindarea", "scale": 1, "thickness": 0.75, "alpha": 80, "color": "0x0184B5"}, // Spotting range
 	            {"enabled": true,  "distance": 445,         "scale": 1, "thickness": 0.75, "alpha": 50, "color": "0xFFCC66"}, // Maximum spotting range i.e. detection distance
-	            {"enabled": true,  "distance": 707,         "scale": 1, "thickness": 0.75, "alpha": 50, "color": "0xD1D2D3"}, // Maximum draw distance i.e. units appearance
+	            {"enabled": true,  "distance": 564,         "scale": 1, "thickness": 0.75, "alpha": 50, "color": "0xD1D2D3"}, // Maximum draw distance i.e. units appearance
 	            {"enabled": false, "distance": "standing"},
 	            {"enabled": false, "distance": "motion"},
 	            {"enabled": false, "distance": "dynamic"}
