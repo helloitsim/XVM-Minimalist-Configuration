@@ -94,6 +94,7 @@
 	},
 
 	"minimap":{
+		"enabled": true,
 		"hideCameraTriangle": true,
 		"labels":{
 			"units":{
@@ -170,20 +171,23 @@
 				"shadow": {"enabled": true, "color": "0x000000", "distance": 0, "angle": 45, "alpha": 85, "blur": 3, "strength": 4}
 			}
 		},
-		"square": {"enabled": true, "artilleryEnabled": true, "thickness": 0.65, "alpha": 50, "color": "0xD1D2D3"},
 		"circles": {
 			"view": [
-				{"enabled": true, "distance": 50, "scale": 1, "thickness": 0.75, "alpha": 50, "color": "0x0184B5"},
-				{"enabled": true, "distance": "blindarea", "scale": 1, "thickness": 0.75, "alpha": 80, "color": "0x0184B5"},
-				{"enabled": false, "distance": 445}
+				{"enabled": true,  "distance": 50,          "scale": 1, "thickness": 0.75, "alpha": 50, "color": "0x0184B5"}, // 50m autodetection range
+				{"enabled": true,  "distance": "blindarea", "scale": 1, "thickness": 0.75, "alpha": 80, "color": "0x0184B5"}, // Spotting range
+	            {"enabled": true,  "distance": 445,         "scale": 1, "thickness": 0.75, "alpha": 50, "color": "0xFFCC66"}, // Maximum spotting range i.e. detection distance
+	            {"enabled": true,  "distance": 707,         "scale": 1, "thickness": 0.75, "alpha": 50, "color": "0xD1D2D3"}, // Maximum draw distance i.e. units appearance
+	            {"enabled": false, "distance": "standing"},
+	            {"enabled": false, "distance": "motion"},
+	            {"enabled": false, "distance": "dynamic"}
 			],
 			"artillery": {"enabled": true, "thickness": 0.75, "alpha": 50, "color": "0xD95555"},
-			"shell": {"enabled": true, "thickness": 0.75, "alpha": 50, "color": "0xD95555"}
+			"shell":     {"enabled": true, "thickness": 0.75, "alpha": 50, "color": "0xD95555"}
 		},
 		"lines": {
-			"vehicle": {"enabled": true, "thickness": 0.65, "alpha": 50, "color": "0xD1D2D3", "from": 0, "to": 2000, "inmeters": true},
-			"camera": {"enabled": true, "thickness": 0.75, "alpha": 80, "color": "0x0184B5", "from": 0, "to": 2000, "inmeters": true},
-			"traverseAngle": {"enabled": true, "thickness": 0.65, "alpha": 50, "color": "0xD1D2D3", "from": 0, "to": 2000, "inmeters": true}
+			"vehicle":       {"enabled": true, "thickness": 0.65, "alpha": 50, "color": "0xD1D2D3", "from": 0, "to": 2000, "inmeters": true},
+			"traverseAngle": {"enabled": true, "thickness": 0.65, "alpha": 50, "color": "0xD1D2D3", "from": 0, "to": 2000, "inmeters": true},
+			"camera":        {"enabled": true, "thickness": 0.75, "alpha": 80, "color": "0x0184B5", "from": 0, "to": 2000, "inmeters": true}
 		}
 	},
 	
