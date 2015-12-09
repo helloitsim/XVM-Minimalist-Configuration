@@ -224,7 +224,7 @@
 	
 	"enemySpottedMarker": {
 		"alpha": 100,
-		"x": 0,
+		"x": -80,
 		"y": 8,
 		"align": "center",
 		"bindToIcon": true,
@@ -237,11 +237,11 @@
 			"neverSeen": "",
 			"lost": "<font face='Wingdings' size='17' color='#FFEE00'>°</font>",
 			"spotted": "<font face='Wingdings' size='17' color='#00DD00'>°</font>",
-			"dead": "<font face='Wingdings' size='17' color='#000000'>N</font>",
+			"dead": "<font face='Wingdings' size='17' color='#FFFFFF'>N</font>",
 			"neverSeen_arty": "",
 			"lost_arty": "<font face='Wingdings' size='17' color='#FFEE00'>°</font>",
 			"spotted_arty": "<font face='Wingdings' size='17' color='#00DD00'>°</font>",
-			"dead_arty": "<font face='Wingdings' size='17' color='#000000'>N</font>"
+			"dead_arty": "<font face='Wingdings' size='17' color='#FFFFFF'>N</font>"
 		}
 	},
 	
