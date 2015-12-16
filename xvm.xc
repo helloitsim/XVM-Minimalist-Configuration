@@ -1,6 +1,7 @@
 // XVM Minimalist Configuration	
 // http://github.com/itsnbyim/XVM-Minimalist-Configuration
 // http://nbyim.com/wot-xvm-minimalist-configuration
+// World of Tanks WoT 9.13
 
 {
 	"autoReloadConfig": true,
